@@ -16,11 +16,10 @@
             color: #fff; /* White text */
         }
         .login-container {
-            text-align: center;
             width: 300px;
         }
         .logo {
-            text-align: right;
+            text-align: left;
             margin-bottom: 20px;
         }
         .logo img {
@@ -29,16 +28,18 @@
         .sign-in-title {
             font-size: 24px;
             margin-bottom: 10px;
+            text-align: left;
         }
         .continue-text {
             margin-bottom: 20px;
+            text-align: left;
         }
         .input-field {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: none;
-            border-bottom: 1px solid #ccc;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             outline: none;
             background: transparent;
             color: #fff;
@@ -48,9 +49,11 @@
             text-decoration: none;
             display: block;
             margin-bottom: 20px;
+            text-align: left;
         }
         .info-text {
             margin-bottom: 20px;
+            text-align: left;
         }
         .next-button {
             background-color: #0070ba;
@@ -59,32 +62,35 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            width: 100%;
+            width: 100px;
             margin-bottom: 20px;
+            float: right;
         }
         .create-account {
             color: #0070ba;
             text-decoration: none;
             display: block;
             margin-bottom: 20px;
+            float: left;
         }
         .languages {
             margin-bottom: 20px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
     <div class="login-container">
         <div class="logo">
-            <img src="hi-logo.png" alt="Logo">
+            <img src="path/to/your-logo.png" alt="Logo">
         </div>
         <div class="sign-in-title">Sign in</div>
         <div class="continue-text">to continue to Gmail</div>
         <input type="text" class="input-field" placeholder="Email or phone">
         <a href="#" class="forgot-email">Forgot email?</a>
         <div class="info-text">Not your computer? Use a private browsing window to sign in. <a href="#">Learn more</a> about using Guest mode.</div>
-        <button class="next-button">Next</button>
         <a href="#" class="create-account">Create account</a>
+        <button class="next-button">Next</button>
         <div class="languages">English (United States)</div>
     </div>
 </body>
