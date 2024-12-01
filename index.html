@@ -12,21 +12,26 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
         }
         .login-container {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 300px;
         }
         .logo {
+            text-align: right;
             margin-bottom: 20px;
         }
         .logo img {
             width: 100px; /* Adjust the size as needed */
+        }
+        .sign-in-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .continue-text {
+            margin-bottom: 20px;
         }
         .input-field {
             width: 100%;
@@ -35,11 +40,16 @@
             border: none;
             border-bottom: 1px solid #ccc;
             outline: none;
+            background: transparent;
+            color: #fff;
         }
         .forgot-email {
             color: #0070ba;
             text-decoration: none;
             display: block;
+            margin-bottom: 20px;
+        }
+        .info-text {
             margin-bottom: 20px;
         }
         .next-button {
@@ -52,24 +62,7 @@
             width: 100%;
             margin-bottom: 20px;
         }
-        .separator {
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-        }
-        .separator::before,
-        .separator::after {
-            content: '';
-            flex: 1;
-            border-bottom: 1px solid #ccc;
-        }
-        .separator:not(:empty)::before {
-            margin-right: .25em;
-        }
-        .separator:not(:empty)::after {
-            margin-left: .25em;
-        }
-        .sign-up {
+        .create-account {
             color: #0070ba;
             text-decoration: none;
             display: block;
@@ -78,14 +71,6 @@
         .languages {
             margin-bottom: 20px;
         }
-        .footer-links {
-            font-size: 12px;
-        }
-        .footer-links a {
-            color: #0070ba;
-            text-decoration: none;
-            margin: 0 5px;
-        }
     </style>
 </head>
 <body>
@@ -93,19 +78,14 @@
         <div class="logo">
             <img src="hi-logo.png" alt="Logo">
         </div>
-        <input type="text" class="input-field" placeholder="Email or mobile number">
+        <div class="sign-in-title">Sign in</div>
+        <div class="continue-text">to continue to Gmail</div>
+        <input type="text" class="input-field" placeholder="Email or phone">
         <a href="#" class="forgot-email">Forgot email?</a>
+        <div class="info-text">Not your computer? Use a private browsing window to sign in. <a href="#">Learn more</a> about using Guest mode.</div>
         <button class="next-button">Next</button>
-        <div class="separator">or</div>
-        <a href="#" class="sign-up">Sign Up</a>
-        <div class="languages">English | Français | Español | 中文</div>
-        <div class="footer-links">
-            <a href="#">Contact Us</a> | 
-            <a href="#">Privacy</a> | 
-            <a href="#">Legal</a> | 
-            <a href="#">Policy Updates</a> | 
-            <a href="#">Worldwide</a>
-        </div>
+        <a href="#" class="create-account">Create account</a>
+        <div class="languages">English (United States)</div>
     </div>
 </body>
 </html>
